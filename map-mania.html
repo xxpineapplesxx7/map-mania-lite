@@ -11,8 +11,28 @@
         <title>Map Mania Lite</title>
         <link rel="stylesheet" href="map-mania.css">
         <script src="map-mania.js"></script>
+        <Style>
+        #myMapID{
+            height: 100%;
+            width: 100%;
+        }
+        html, body {
+            height:100%;
+            margin: 0;
+            padding: 0;
+        }
+        </Style>
+
     </head>
     <body onload="initApplication">
         <h1>Map Mania Lite v1.1></h1>
-    </body>
+
+        <div id="myMapID"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXjh-a53VB95DSXVWQCTpOZ-YK0TYOIAE&callback=initMap"
+            async defer>
+        </script>">  
+       
+        
+        </body>
 </html>
